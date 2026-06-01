@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBG</title>
+  <link rel="icon" type="image/png" href="image/bgnlogo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="MBG.css">
+  <script src="MBG.js" defer></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">MBG<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#tentang">Tentang MBG</a></li>
+      <li><a href="#menu">Menu Gizi</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="darkToggle" title="Dark mode">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="closeMobileNav()">Home</a>
+    <a href="#tentang" onclick="closeMobileNav()">Tentang MBG</a>
+    <a href="#menu" onclick="closeMobileNav()">Menu Gizi</a>
+    <a href="#galeri" onclick="closeMobileNav()">Galeri</a>
+    <a href="#kontak" onclick="closeMobileNav()">Kontak</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-content fade-in">
+      <div class="hero-badge">Program Nasional 2025</div>
+      <h1 class="hero-title">
+        Program <span class="accent">Makan Bergizi Gratis</span> untuk Generasi <span class="gold">Sehat</span> Indonesia
+      </h1>
+      <p class="hero-desc">
+        Mewujudkan generasi penerus bangsa yang sehat, cerdas, dan berprestasi melalui pemenuhan gizi yang merata dan berkualitas di seluruh sekolah Indonesia.
+      </p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">🍱 Lihat Menu</a>
+        <a href="#tentang" class="btn btn-outline">Pelajari Lebih Lanjut →</a>
+      </div>
+    </div>
+
+    <!--ganti jadi img-->
+    <div class="hero-img-wrap fade-in" style="transition-delay:0.2s">
+      <div class="hero-visual">
+        <img src="cover.jpg" />
+      </img>
+      <div class="hero-chip c1">✅ Bergizi Seimbang</div>
+      <div class="hero-chip c2">🌟 1000+ Sekolah</div>
+    </div>
+  </section>
+
+  <!-- TENTANG MBG -->
+  <section id="tentang">
+    <div class="section-tag">Tentang Program</div>
+    <div class="tentang-grid">
+      <div class="tentang-text fade-in">
+        <h2 class="section-title">Apa itu Program MBG?</h2>
+        <p>Program Makan Bergizi Gratis (MBG) adalah inisiatif pemerintah Indonesia yang bertujuan memastikan setiap siswa mendapatkan asupan gizi yang cukup setiap harinya.</p>
+        <p>Program ini menyentuh jutaan pelajar dari jenjang PAUD, SD, SMP, hingga SMA di seluruh penjuru nusantara, terutama di daerah yang membutuhkan perhatian lebih.</p>
+        <div class="highlight">
+          💡 "Anak yang kenyang dan bergizi akan lebih mudah menyerap ilmu, tumbuh sehat, dan menjadi generasi penerus bangsa yang tangguh."
+        </div>
+      </div>
+      <div class="tentang-cards fade-in" style="transition-delay:0.15s">
+        <div class="t-card">
+          <div class="icon">🍎</div>
+          <h4>Nutrisi Seimbang</h4>
+          <p>Menu terancang sesuai standar gizi anak usia sekolah dengan panduan ahli gizi berpengalaman.</p>
+        </div>
+        <div class="t-card">
+          <div class="icon">📚</div>
+          <h4>Mendukung Belajar</h4>
+          <p>Gizi cukup terbukti meningkatkan konsentrasi, daya ingat, dan semangat belajar siswa.</p>
+        </div>
+        <div class="t-card">
+          <div class="icon">💪</div>
+          <h4>Menjaga Kesehatan</h4>
+          <p>Mencegah stunting dan malnutrisi sejak dini untuk tumbuh kembang optimal setiap anak.</p>
+        </div>
+        <div class="t-card">
+          <div class="icon">🤝</div>
+          <h4>Merata untuk Semua</h4>
+          <p>Menjangkau siswa dari berbagai latar belakang ekonomi agar tidak ada yang tertinggal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU GIZI -->
+  <section id="menu">
+    <div class="section-tag">Menu Harian</div>
+    <h2 class="section-title fade-in">Menu Makanan Bergizi</h2>
+    <p class="section-desc fade-in">Setiap menu dipilih dengan cermat untuk memenuhi kebutuhan nutrisi harian para pelajar.</p>
+    <div class="menu-grid">
+      <div class="menu-card fade-in">
+        <div class="menu-thumb" style="background:linear-gradient(135deg,#fff9e6,#ffe9a0)">🍚</div>
+        <div class="menu-body">
+          <h3>Nasi Putih</h3>
+          <p>Sumber karbohidrat utama yang memberikan energi untuk aktivitas belajar seharian.</p>
+          <span class="menu-badge">~206 kkal</span>
+        </div>
+      </div>
+      <div class="menu-card fade-in" style="transition-delay:0.05s">
+        <div class="menu-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9)">🥦</div>
+        <div class="menu-body">
+          <h3>Sayuran Segar</h3>
+          <p>Campuran bayam, wortel, dan brokoli kaya vitamin, mineral, dan serat alami.</p>
+          <span class="menu-badge">~55 kkal</span>
+        </div>
+      </div>
+      <div class="menu-card fade-in" style="transition-delay:0.1s">
+        <div class="menu-thumb" style="background:linear-gradient(135deg,#fff3e0,#ffcc80)">🍗</div>
+        <div class="menu-body">
+          <h3>Ayam Goreng</h3>
+          <p>Sumber protein hewani berkualitas tinggi untuk pertumbuhan otot dan otak anak.</p>
+          <span class="menu-badge">~190 kkal</span>
+        </div>
+      </div>
+      <div class="menu-card fade-in" style="transition-delay:0.15s">
+        <div class="menu-thumb" style="background:linear-gradient(135deg,#fce4ec,#f48fb1)">🥚</div>
+        <div class="menu-body">
+          <h3>Telur Rebus</h3>
+          <p>Protein lengkap dengan semua asam amino esensial yang dibutuhkan tubuh anak.</p>
+          <span class="menu-badge">~78 kkal</span>
+        </div>
+      </div>
+      <div class="menu-card fade-in" style="transition-delay:0.2s">
+        <div class="menu-thumb" style="background:linear-gradient(135deg,#e3f2fd,#90caf9)">🥛</div>
+        <div class="menu-body">
+          <h3>Susu Segar</h3>
+          <p>Kaya kalsium dan vitamin D untuk memperkuat tulang dan gigi anak yang sedang tumbuh.</p>
+          <span class="menu-badge">~120 kkal</span>
+        </div>
+      </div>
+      <div class="menu-card fade-in" style="transition-delay:0.25s">
+        <div class="menu-thumb" style="background:linear-gradient(135deg,#fce4ec,#ffab91)">🍊</div>
+        <div class="menu-body">
+          <h3>Buah Segar</h3>
+          <p>Jeruk, pepaya, dan pisang bergantian setiap hari sebagai sumber vitamin C dan antioksidan.</p>
+          <span class="menu-badge">~60 kkal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section id="galeri">
+    <div class="section-tag">Galeri</div>
+    <h2 class="section-title fade-in">Momen Kebersamaan</h2>
+    <p class="section-desc fade-in">Dokumentasi kegiatan pembagian makanan bergizi di berbagai sekolah.</p>
+    <div class="gallery-grid" style="margin-top:2.5rem">
+      <div class="g-item">
+        <img src="pembagian_mbg.jpg" />
+        <div class="g-caption">Pembagian Makan Siang</div>
+      </div>
+      <div class="g-item fade-in" style="transition-delay:0.1s">
+        <img src="tim_dapur.jpg" />
+        <div class="g-caption">Tim Dapur Bergizi</div>
+      </div>
+      <div class="g-item fade-in" style="transition-delay:0.15s">
+        <img src="mbg.jpg" />
+        <div class="g-caption">Kegiatan di Sekolah</div>
+      </div>
+      <div class="g-item fade-in" style="transition-delay:0.2s">
+        <img src="persiapan_mbg.jpg" />
+        <div class="g-caption">Persiapan Menu Sehat</div>
+      </div>
+      <div class="g-item fade-in" style="transition-delay:0.25s">
+        <img src="siswa_kenyang.jpeg" />
+        <div class="g-caption">Siswa Bahagia & Kenyang</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTIK -->
+  <section id="statistik">
+    <div class="section-tag">Dampak Program</div>
+    <h2 class="section-title fade-in">Angka yang Bicara</h2>
+    <div class="stat-grid">
+      <div class="stat-card fade-in">
+        <div class="stat-icon">👩‍🎓</div>
+        <div class="stat-num" data-target="10000">0</div>
+        <div class="stat-label">Siswa Terbantu</div>
+      </div>
+      <div class="stat-card fade-in" style="transition-delay:0.1s">
+        <div class="stat-icon">🏫</div>
+        <div class="stat-num" data-target="250">0</div>
+        <div class="stat-label">Sekolah Terdaftar</div>
+      </div>
+      <div class="stat-card fade-in" style="transition-delay:0.2s">
+        <div class="stat-icon">🥗</div>
+        <div class="stat-num" data-target="365">0</div>
+        <div class="stat-label">Hari Menu Sehat</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK / FORM -->
+  <section id="kontak">
+    <div class="section-tag">Hubungi Kami</div>
+    <h2 class="section-title fade-in">Kritik &amp; Saran</h2>
+    <p class="section-desc fade-in">Masukan kamu sangat berarti untuk perbaikan program MBG ke depannya.</p>
+    <div class="kontak-wrap">
+      <div class="form-box fade-in">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Masukkan nama kamu...">
+        </div>
+        <div class="form-group">
+          <label for="email">Email (opsional)</label>
+          <input type="email" id="email" placeholder="contoh@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan / Saran</label>
+          <textarea id="pesan" placeholder="Tuliskan kritik atau saran kamu di sini..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%" onclick="kirimSaran()">📨 Kirim Saran</button>
+      </div>
+      <div class="kontak-info fade-in" style="transition-delay:0.15s">
+        <h3>Informasi Kontak</h3>
+        <p>Kami terbuka untuk masukan, pertanyaan, atau kolaborasi terkait program Makan Bergizi Gratis.</p>
+        <div class="info-item">
+          <div class="ii-icon">📍</div>
+          <div>
+            <h5>Lokasi</h5>
+            <p><a href="https://maps.app.goo.gl/ksmPjudkbhYbPwYH7">Jakarta, Indonesia</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="ii-icon">📞</div>
+          <div>
+            <h5>WhatsApp</h5>
+            <p><a href="https://wa.me/6281110008008">0811‑1000‑8008</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="ii-icon">✉️</div>
+          <div>
+            <h5>Email</h5>
+            <p><a href="mailto:halo@bgn.go.id">halo@bgn.go.id</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">MBG<span style="color:var(--gold)">.</span></div>
+        <p>Program Makan Bergizi Gratis.</p>
+        <p style="margin-top:0.6rem;font-size:0.8rem;opacity:0.6">Dibuat oleh: Kelompok 7 — Mata Kuliah Web Design C</p>
+      </div>
+      <div class="footer-links">
+        <h5>Navigasi</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">Tentang MBG</a></li>
+          <li><a href="#menu">Menu Gizi</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Ikuti Kami</h5>
+        <ul>
+          <li><a href="https://instagram.com/badangizinasional.ri">Instagram: badangizinasional.ri</a></li>
+          <li><a href="https://bgn.go.id/">Website: bgn.go.id</a></li>
+          <li><a href="https://www.youtube.com/@BadanGiziNasional">YouTube: BadanGiziNasional</a></li>
+          <li><a href="mailto:halo@bgn.go.id">Email: halo@bgn.go.id</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Program Makan Bergizi Gratis. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- SCROLL TO TOP -->
+  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</body>
+</html>
